@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-var awvsurl = "https://96.xx.xx.xx:13443"
+var awvsurl = "https://xx.xx.xx.xx:13443"
 var apikey = "xxxxx"
 
 type AwvsCount struct {
