@@ -1,9 +1,9 @@
-Hackerone 报告数据统计
-按月份统计
-统计获得的奖金，报告数量，漏洞质量
-因为hackerone的统计不是实时的
-
-使用方法
-复制js
-登录hackerone网站
-console里面粘贴使用，会自动下载报告
+Hackerone 报告数据统计<br>
+按月份统计<br>
+统计获得的奖金，报告数量，漏洞质量<br>
+因为hackerone的统计不是实时的<br>
+<br><br>
+使用方法<br>
+复制js<br>
+登录hackerone网站<br>
+console里面粘贴使用，会自动下载报告<br>
