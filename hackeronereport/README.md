@@ -8,3 +8,4 @@ Hackerone 报告数据统计<br>
 登录hackerone网站<br>
 console里面粘贴回车使用，会自动下载报告<br>
 回车之后，需要稍等一会，网络快的不到1分钟
+只在Chrome使用过，不知道兼容其他浏览器不
