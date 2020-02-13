@@ -6,4 +6,5 @@ Hackerone 报告数据统计<br>
 使用方法<br>
 复制js<br>
 登录hackerone网站<br>
-console里面粘贴使用，会自动下载报告<br>
+console里面粘贴回车使用，会自动下载报告<br>
+回车之后，需要稍等一会，网络快的不到1分钟
