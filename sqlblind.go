@@ -8,7 +8,6 @@ import (
 	"time"
 )
 
-
 func main() {
 	Getinfo("db_name()")
 }
