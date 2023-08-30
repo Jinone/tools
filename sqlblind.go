@@ -12,7 +12,9 @@ import (
 
 func main() {
 	GetInfo("current_database()")
-	GetInfo("version()")
+	GetInfo("user()")
+	GetInfo("session_user")
+	//GetInfo("version()")
 }
 
 func Requester(uUrl string, method string) bool {
