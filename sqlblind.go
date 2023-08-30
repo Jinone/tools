@@ -43,7 +43,7 @@ func Requester(uUrl string, method string) bool {
 }
 
 func GetLen(s string) int {
-	for i := 1; i < 100; i++ {
+	for i := 1; i < 150; i++ {
 		pUrl := fmt.Sprintf("https://api.simplify.com/ss/api/web/policy?filter.enabled=true&filter.store=a6ozbe&sorting.index=,1/(%d/length(%s))", i, s)
 		if Requester(pUrl, "GET") {
 			fmt.Println(s, "length is  ", i)
